@@ -9,7 +9,7 @@ export const Title = (props: {
   return (
     <View style={styles.titleContainer}>
       <Text style={styles.title}>{props.children}</Text>
-      {props.onButtonPress? <AddButton onPress={props.onButtonPress} /> : null}
+      {props.onButtonPress ? <AddButton onPress={props.onButtonPress} /> : null}
     </View>
   );
 };
