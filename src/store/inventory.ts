@@ -1,4 +1,14 @@
-[
+import { atom } from 'jotai'
+
+type Item = {
+  id: number;
+  name: string;
+  purchasePrice: number;
+  description?: string;
+  photo: string;
+}
+
+export const inventoryAtom = atom<Item[]>([
 	{
 	  "id": 1,
 	  "name": "Cartier ring",
@@ -11,5 +21,5 @@
 	  "name": "Guitar",
 		"purchasePrice": 850,
 		"photo": "https://i.ibb.co/4dfndL2/louis-hansel-M-d-J-Scwa-LE-unsplash.jpg"
-  }
-]
+  },
+])
